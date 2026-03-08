@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Allow: /rhymes/
+Allow: /index.html
+Allow: /audio/
+Allow: /images/
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+Sitemap: https://example.com/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
