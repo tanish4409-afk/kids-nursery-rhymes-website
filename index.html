@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Popular Kids Nursery Rhymes - Learn with fun animated songs, videos, and music for babies and preschoolers. Educational content for children.">
+    <meta name="keywords" content="kids rhymes, nursery rhymes songs, funny kids rhymes, kids learning songs, baby rhymes videos, preschool rhymes, children songs, educational content">
+    <meta name="author" content="Kids Nursery Rhymes">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Kids Nursery Rhymes - Animated Songs & Learning Videos">
+    <meta property="og:description" content="Popular Kids Nursery Rhymes with animated characters and catchy songs for babies and preschoolers.">
+    <meta property="og:image" content="https://example.com/images/hero-og-image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kids Nursery Rhymes - Animated Songs">
+    <meta name="twitter:description" content="Learn with fun animated nursery rhymes for kids">
+    
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Website",
+        "name": "Kids Nursery Rhymes",
+        "description": "Popular Kids Nursery Rhymes with animated characters and educational songs",
+        "url": "https://example.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://example.com/search?q={search_term_string}"
+            }
+        }
+    }
+    </script>
+    
+    <title>Kids Nursery Rhymes - Animated Songs & Learning Videos for Children</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Google AdSense Header Banner -->
+    <div class="ad-banner-top">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="xxxxxxxxxx" data-ad-format="horizontal"></ins>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-emoji">🎵</span>
+                <h1>Kids Rhymes</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#all-rhymes" class="nav-link">Rhymes</a>
+                <a href="#playlist" class="nav-link">Playlist</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Learn & Sing Along!</h2>
+            <p class="hero-subtitle">Popular nursery rhymes with fun animations and catchy songs</p>
+            <button class="cta-button" onclick="document.querySelector('.rhymes-grid').scrollIntoView({behavior: 'smooth'})">
+                ✨ Explore Rhymes
+            </button>
+        </div>
+        
+        <!-- Animated Characters -->
+        <div class="hero-characters">
+            <div class="character star" id="star-char">⭐</div>
+            <div class="character sheep" id="sheep-char">🐑</div>
+            <div class="character duck" id="duck-char">🦆</div>
+            <div class="character cloud" id="cloud-char">☁️</div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        
+        <!-- Sidebar with Playlist -->
+        <aside class="sidebar">
+            <div class="playlist-section">
+                <h3 class="playlist-title">🎶 Now Playing</h3>
+                <div class="current-track">
+                    <div class="track-info">
+                        <div class="track-name" id="current-track-name">Twinkle Twinkle Little Star</div>
+                    </div>
+                </div>
+                
+                <!-- Audio Player -->
+                <div class="audio-player">
+                    <audio id="playlist-audio" crossorigin="anonymous">
+                        <source src="audio/twinkle-twinkle.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="player-controls">
+                        <button id="play-btn" class="player-btn">▶</button>
+                        <button id="pause-btn" class="player-btn">⏸</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    
+                    <div class="volume-control">
+                        <label for="volume">🔊</label>
+                        <input type="range" id="volume" min="0" max="100" value="70">
+                    </div>
+                </div>
+
+                <!-- Playlist -->
+                <div class="playlist-items" id="playlist-items">
+                    <div class="playlist-item active" data-audio="audio/twinkle-twinkle.mp3" data-title="Twinkle Twinkle Little Star">
+                        ⭐ Twinkle Twinkle
+                    </div>
+                    <div class="playlist-item" data-audio="audio/johny-johny.mp3" data-title="Johny Johny Yes Papa">
+                        👦 Johny Johny
+                    </div>
+                    <div class="playlist-item" data-audio="audio/baa-baa.mp3" data-title="Baa Baa Black Sheep">
+                        🐑 Baa Baa Black Sheep
+                    </div>
+                    <div class="playlist-item" data-audio="audio/wheels-on-bus.mp3" data-title="Wheels on the Bus">
+                        🚌 Wheels on the Bus
+                    </div>
+                    <div class="playlist-item" data-audio="audio/rain-rain.mp3" data-title="Rain Rain Go Away">
+                        🌧️ Rain Rain Go Away
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google AdSense Sidebar Ad -->
+            <div class="ad-sidebar">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="xxxxxxxxxx" data-ad-format="vertical"></ins>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- All Rhymes Section -->
+            <section class="rhymes-section" id="all-rhymes">
+                <h2 class="section-title">🎵 Popular Nursery Rhymes</h2>
+                <p class="section-subtitle">Click on any rhyme to see animations, lyrics, and videos</p>
+                
+                <div class="rhymes-grid" id="rhymes-grid">
+                    <!-- Rhyme Cards Generated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Google AdSense In-Content Ad -->
+            <div class="ad-in-content">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="xxxxxxxxxx" data-ad-format="rectangle"></ins>
+            </div>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <h2 class="section-title">📺 Kids Rhymes Videos</h2>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/I9hJ_iMkxzw" title="Twinkle Twinkle Little Star" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Twinkle Twinkle Little Star</h3>
+                    </div>
+                    <div class="video-card">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/oH_K-__PFBY" title="Johny Johny Yes Papa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Johny Johny Yes Papa</h3>
+                    </div>
+                    <div class="video-card">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/5V9P-m23qnY" title="Baa Baa Black Sheep" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Baa Baa Black Sheep</h3>
+                    </div>
+                    <div class="video-card">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/E1Z0gB2gqVE" title="Wheels on the Bus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Wheels on the Bus</h3>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer with Google AdSense -->
+    <footer class="footer">
+        <div class="ad-footer">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="xxxxxxxxxx" data-ad-format="horizontal"></ins>
+        </div>
+        
+        <div class="footer-content">
+            <p>&copy; 2026 Kids Nursery Rhymes. Educational content for children. <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            <p>All rhymes designed to be fun, educational, and safe for kids!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
