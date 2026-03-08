@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twinkle Twinkle Little Star - Popular nursery rhyme with animated characters, lyrics, and educational video for kids and babies.">
+    <meta name="keywords" content="twinkle twinkle little star, nursery rhyme, kids song, baby rhyme, children learning">
+    <title>Twinkle Twinkle Little Star - Kids Nursery Rhyme</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Twinkle Twinkle Little Star",
+        "description": "Popular nursery rhyme with animations and educational content",
+        "keywords": "nursery rhyme, kids song, baby rhyme",
+        "author": {"@type": "Organization", "name": "Kids Nursery Rhymes"}
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-emoji">🎵</span>
+                <h1>Kids Rhymes</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#all-rhymes" class="nav-link">Rhymes</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="playlist-section">
+                <h3 class="playlist-title">🎶 Quick Play</h3>
+                
+                <div class="audio-player">
+                    <audio id="rhyme-audio" crossorigin="anonymous">
+                        <source src="../audio/twinkle-twinkle.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                    <div class="player-controls">
+                        <button id="play-btn-rhyme" class="player-btn">▶</button>
+                        <button id="pause-btn-rhyme" class="player-btn">⏸</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" id="rhyme-progress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AdSense -->
+            <div class="ad-sidebar">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="xxxxxxxxxx" data-ad-format="vertical"></ins>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="rhyme-hero">
+                <h2 class="rhyme-title">⭐ Twinkle Twinkle Little Star</h2>
+                <div class="star-animation">
+                    <div class="star">✨</div>
+                    <div class="star">⭐</div>
+                    <div class="star">✨</div>
+                </div>
+            </section>
+
+            <!-- Lyrics Section -->
+            <section class="rhyme-content">
+                <h3>📝 Lyrics</h3>
+                <div class="lyrics">
+                    <p>Twinkle, twinkle, little star,<br>
+                    How I wonder what you are.<br>
+                    Up above the world so high,<br>
+                    Like a diamond in the sky.<br>
+                    Twinkle, twinkle, little star,<br>
+                    How I wonder what you are.</p>
+                </div>
+            </section>
+
+            <!-- AdSense In-Content -->
+            <div class="ad-in-content">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="xxxxxxxxxx" data-ad-format="rectangle"></ins>
+            </div>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <h3>📺 Watch & Learn</h3>
+                <div class="video-embed">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/I9hJ_iMkxzw" title="Twinkle Twinkle Little Star" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- Related Rhymes -->
+            <section class="related-rhymes">
+                <h3>🎵 Related Rhymes</h3>
+                <div class="related-grid">
+                    <a href="johny-johny.html" class="related-card">
+                        <span>👦 Johny Johny Yes Papa</span>
+                    </a>
+                    <a href="baa-baa-black-sheep.html" class="related-card">
+                        <span>🐑 Baa Baa Black Sheep</span>
+                    </a>
+                    <a href="abc-song.html" class="related-card">
+                        <span>🔤 ABC Song</span>
+                    </a>
+                    <a href="happy-and-know-it.html" class="related-card">
+                        <span>😊 If You're Happy</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Share Section -->
+            <section class="share-section">
+                <h3>📤 Share This Rhyme</h3>
+                <div class="share-buttons">
+                    <button class="share-btn facebook" onclick="shareOnFacebook()">📘 Facebook</button>
+                    <button class="share-btn twitter" onclick="shareOnTwitter()">𝕏 Twitter</button>
+                    <button class="share-btn whatsapp" onclick="shareOnWhatsApp()">💬 WhatsApp</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="ad-footer">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="xxxxxxxxxx" data-ad-format="horizontal"></ins>
+        </div>
+        
+        <div class="footer-content">
+            <p>&copy; 2026 Kids Nursery Rhymes. Educational content for children.</p>
+        </div>
+    </footer>
+
+    <style>
+        .rhyme-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rhyme-title {
+            font-size: 2.5rem;
+            font-family: 'Bubblegum Sans', cursive;
+            margin-bottom: 1rem;
+        }
+
+        .star-animation {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .star {
+            font-size: 2rem;
+            animation: twinkle 1s ease-in-out infinite;
+        }
+
+        .star:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .star:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .rhyme-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .rhyme-content h3 {
+            color: #667eea;
+            font-family: 'Bubblegum Sans', cursive;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .lyrics {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #2d3436;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .video-section {
+            margin-bottom: 2rem;
+        }
+
+        .video-section h3 {
+            color: #667eea;
+            font-family: 'Bubblegum Sans', cursive;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .video-embed {
+            background: white;
+            padding: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .related-rhymes {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .related-rhymes h3 {
+            color: #667eea;
+            font-family: 'Bubblegum Sans', cursive;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .related-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 700;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .share-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .share-section h3 {
+            color: #667eea;
+            font-family: 'Bubblegum Sans', cursive;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            flex: 1;
+            min-width: 120px;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .share-btn.facebook {
+            background: #667eea;
+            color: white;
+        }
+
+        .share-btn.twitter {
+            background: #764ba2;
+            color: white;
+        }
+
+        .share-btn.whatsapp {
+            background: #43e97b;
+            color: white;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .rhyme-title {
+                font-size: 1.8rem;
+            }
+
+            .lyrics {
+                font-size: 1rem;
+            }
+
+            .related-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+    </style>
+
+    <script>
+        const playBtn = document.getElementById('play-btn-rhyme');
+        const pauseBtn = document.getElementById('pause-btn-rhyme');
+        const audioPlayer = document.getElementById('rhyme-audio');
+        const progressBar = document.getElementById('rhyme-progress');
+
+        playBtn.addEventListener('click', () => audioPlayer.play());
+        pauseBtn.addEventListener('click', () => audioPlayer.pause());
+
+        audioPlayer.addEventListener('timeupdate', () => {
+            const percent = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+            progressBar.style.width = percent + '%';
+        });
+
+        function shareOnFacebook() {
+            window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '_blank');
+        }
+
+        function shareOnTwitter() {
+            window.open('https://twitter.com/intent/tweet?url=' + window.location.href + '&text=Check out Twinkle Twinkle Little Star!', '_blank');
+        }
+
+        function shareOnWhatsApp() {
+            window.open('https://wa.me/?text=Check out this Kids Nursery Rhyme: ' + window.location.href, '_blank');
+        }
+    </script>
+</body>
+</html>
