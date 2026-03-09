@@ -8,7 +8,7 @@ const rhymesData = [
         id: 'twinkle-twinkle',
         name: 'Twinkle Twinkle Little Star',
         emoji: '⭐',
-        audio: 'Audio/Twinkle_Twinkle_Little_Star___Nursery_Rhymes_for_Kids___Super_Simple_Songs(256k).mp3',
+        audio: 'audio/Twinkle_Twinkle_Little_Star___Nursery_Rhymes_for_Kids___Super_Simple_Songs(256k).mp3',
         description: 'Classic bedtime rhyme'
     },
     {
